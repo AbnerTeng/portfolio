@@ -2738,6 +2738,7 @@ input[type="button"]:disabled,
 	-ms-flex-grow: 1;
 	flex-grow: 1;
 	margin: 0 0 2em 0;
+	text-align: center
 }
 
 #header strong,
@@ -2762,12 +2763,13 @@ input[type="button"]:disabled,
 
 #header .image.avatar {
 	margin: 0 0 1em 0;
-	width: 6.25em;
+	width: 10.00em;
 }
 
 /* Footer */
 
 #footer .icons {
+	text-align: center;
 	margin: 1em 0 0 0;
 }
 
@@ -2781,6 +2783,7 @@ input[type="button"]:disabled,
 	list-style: none;
 	margin: 1em 0 0 0;
 	padding: 0;
+	text-align: center;
 }
 
 #footer .copyright li {
@@ -3376,8 +3379,8 @@ body.is-touch .poptrox-popup .closer {
 #navbar i {
 	position: absolute;
 	left: 30px;
-	top: 15px;
-	font-size: 20px;
+	top: 18px;
+	font-size: 16px;
 	color: white;
 }
 
@@ -3398,6 +3401,11 @@ body.is-touch .poptrox-popup .closer {
 	background-color: #ffffff;
 }
 
+.tab i {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
 	display: inline-block;
@@ -3405,7 +3413,7 @@ body.is-touch .poptrox-popup .closer {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 10px 55px;
+	padding: 10px 30px;
 	transition: 1.0s;
 	font-size: 17px;
 	font-weight: 600;
@@ -3434,12 +3442,30 @@ body.is-touch .poptrox-popup .closer {
 	margin-left: -24px;
 }
 
-.tabcontent ul li {
-	display: flex;
-	justify-content: space-between;
+.tabcontent ul {
+	list-style-type: none;
+	margin-left: 20px;
+	padding-left: 0;
 }
 
-.tabcontent ul li .year {
+.tabcontent ul li {
+	display: flex;
+	align-items: center;
+}
+
+.tabcontent ul li .item {
+	font-weight: 600;
+	color: #010440;
+	font-size: 18px;
+}
+
+.tabcontent ul ul li::before {
+	content: "\2022";
+	color: #010440;
+	margin-right: 8px;
+}
+
+.tabcontent ul ul li .year {
 	margin-left: auto;
 	white-space: nowrap;
 }

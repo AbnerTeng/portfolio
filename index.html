@@ -35,7 +35,7 @@
 <body class="is-preload">
 	<!-- Navigation buttons -->
 	<div id="navbar">
-		<i class="fas fa-kiwi-bird"></i>
+		<i class="fas fa-kiwi-bird"> Welcome to Abner's Personal Website</i>
 		<button onclick="navigateToSection('one')">About Me</button>
 		<button onclick="navigateToSection('two')">Experiences</button>
 		<button onclick="navigateToSection('three')">Projects</button>
@@ -44,7 +44,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a class="image avatar"><img src="images/face.png" alt="" /></a>
+			<a class="image avatar"><img src="images/IMG_1039.png" alt="" /></a>
 			<h1><strong>Hello, I'm Abner Den.</strong><br /><br />
 				A financial engineering master student who dreams to be a <br /> data scientist.</h1>
 		</div>
@@ -58,49 +58,87 @@
 			<header class="major">
 				<h2>About me</h2>
 			</header>
-			<h4>
+			<h4 style="text-align: left;">
 				"Highly Self-Motivated, Critical Thinking, Data Driven, Good Team player".
 			</h4>
-			<div class="tab">
-				<button class="tablinks" onclick="OpenTab(event, 'education')" id="defaultOpen">Education</button>
-				<button class="tablinks" onclick="OpenTab(event, 'experiences')">Experiences</button>
-				<button class="tablinks" onclick="OpenTab(event, 'societies')">Societies</button>
-				<button class="tablinks" onclick="OpenTab(event, 'skills')">Skills</button>
+			<div class="tab" style="align-items: center;">
+				<button class="tablinks" onclick="OpenTab(event, 'education')" id="defaultOpen"><i
+						class="fas fa-graduation-cap" style="margin-right: 8px;"></i>Education</button>
+				<button class="tablinks" onclick="OpenTab(event, 'experiences')"><i class="fas fa-desktop"
+						style="margin-right: 8px;"></i>Experiences</button>
+				<button class="tablinks" onclick="OpenTab(event, 'skills')"><i class="fas fa-code"
+						style="margin-right: 8px;"></i>Skills</button>
+				<button class="tablinks" onclick="OpenTab(event, 'tas')"><i class="fas fa-chalkboard-teacher"
+						style="margin-right: 8px;"></i>TAs</button>
 			</div>
 			<div id="education" class="tabcontent">
 				<p>
 				<ul>
-					<li>M.S. Money and Banking, National Chengchi University<span class="year">22.09 - present</span>
-					</li>
-					<li>B.A. in Public Finance, National Chengchi University<span class="year">18.09 - 22.06</span>
-					</li>
+					<li><span class="item">Master</span></li>
+					<ul>
+						<li>M.S. Money and Banking, National Chengchi University<span class="year">22.09 -
+								present</span>
+						</li>
+					</ul>
+					<li><span class="item">Bachelor</span></li>
+					<ul>
+						<li>B.A. in Public Finance, National Chengchi University<span class="year">18.09 - 22.06</span>
+						</li>
+					</ul>
 				</ul>
 				</p>
 			</div>
 			<div id="experiences" class="tabcontent">
 				<p>
 				<ul>
-					<li>Data Scientist / Data Analyst Intern @ iKala Interactive Media Inc.<span class="year">23.03 -
-							present</span></li>
-					<li>Research Consultant @ WorldQuant LLC.<span class="year">22.11 - 23.03</span></li>
-				</ul>
-				</p>
-			</div>
-			<div id="societies" class="tabcontent">
-				<p>
-				<ul>
-					<li>5th Director of Academic Affairs @ NTU DAC<span class="year">23.07 - present</span></li>
-					<li>24th Mentor of Algorithm Trading Team @ TMBA Taiwan<span class="year">23.07 - Present</span>
-					</li>
+					<li><span class="item">Internships</span></li>
+					<ul>
+						<li>Graduate Research Assistant @ NCCU <span class="year">23.10 - present</span></li>
+						<li>Data Scientist / Data Analyst Intern @ iKala Interactive Media Inc.<span class="year">23.03
+								-
+								present</span></li>
+						<li>Research Consultant @ WorldQuant LLC.<span class="year">22.11 - 23.03</span></li>
+					</ul>
+					<li><span class="item">Academic Societies</span></li>
+					<ul>
+						<li>5th Director of Academic Affairs @ NTU DAC<span class="year">23.07 - present</span></li>
+						<li>24th Mentor of Algorithm Trading Team @ TMBA Taiwan<span class="year">23.07 - Present</span>
+						</li>
+					</ul>
 				</ul>
 				</p>
 			</div>
 			<div id="skills" class="tabcontent">
 				<p>
 				<ul>
-					<li>Programming Languages: Python, SQL, C++, html, CSS</li>
-					<li>Develop Related: Git, GitHub, Linux OS, Vim, Shell Script, Unittest</li>
-					<li>DS / ML Packages: PyTorch, Scikit-Learn, HuggingFace, Numpy, Pandas, Scipy</li>
+					<li><span class="item">Programming Language</span></li>
+					<ul>
+						<li>Python, SQL, C++, HTML, CSS, Shell Script, LaTeX</li>
+					</ul>
+					<li><span class="item">Develop Related</span></li>
+					<ul>
+						<li>Git, GitHub, Linux Command Line, Vim, Unittest, CI/CD</li>
+					</ul>
+					<li><span class="item">DS/ML Packages</span></li>
+					<ul>
+						<li>DS / ML Packages: PyTorch, Scikit-Learn, HuggingFace, Numpy, Pandas, Scipy</li>
+					</ul>
+				</ul>
+				</p>
+			</div>
+			<div id="tas" class="tabcontent">
+				<p>
+				<ul>
+					<li><span class="item">Graduate</span></li>
+					<ul>
+						<li>Econometrics<span class="year">23.09 - present</span></li>
+					</ul>
+					<li><span class="item">Undergraduate</span></li>
+					<ul>
+						<li>Machine Learning<span class="year">23.02 - 23.06</span>
+						</li>
+						<li>Financial Markets<span class="year">22.09 - 23.01</span></li>
+					</ul>
 				</ul>
 				</p>
 			</div>
@@ -113,10 +151,12 @@
 		</section>
 		<!-- Two -->
 		<section id="two">
-			<h2>Experiences</h2>
+			<header class="major">
+				<h2>Experiences</h2>
+			</header>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
-					<h3>Director of Academic Affairs @ <a href="https://ntudac.com">NTU DAC</a></h3>
+					<h3>5th Director of Academic Affairs @ <a href="https://ntudac.com">NTU DAC</a></h3>
 					<a class="image fit thumb"><img src="images/thumbs/dac_bg.JPG" alt="" /></a>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
@@ -131,7 +171,9 @@
 		</section>
 		<!-- Three -->
 		<section id="three">
-			<h2>Recent Projects</h2>
+			<header class="major">
+				<h2>Recent Projects</h2>
+			</header>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
 					<a class="image fit thumb"><img src="images/thumbs/creation.png" height="200" alt="" /></a>
