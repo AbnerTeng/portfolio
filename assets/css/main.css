@@ -173,7 +173,7 @@ html {
 }
 
 body {
-	background: #000000;
+	background: #ffffff;
 }
 
 body.is-preload *,
@@ -193,7 +193,7 @@ body,
 input,
 select,
 textarea {
-	color: #ffffff;
+	color: #444444;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 16pt;
 	font-weight: 400;
@@ -233,8 +233,8 @@ p {
 
 h1,
 h2 {
-	color: #156cee;
-	font-weight: 400;
+	color: #010440;
+	font-weight: 600;
 	line-height: 1em;
 	margin: 0 0 1em 0;
 }
@@ -243,8 +243,8 @@ h3,
 h4,
 h5,
 h6 {
-	color: #ffffff;
-	font-weight: 400;
+	color: #010440;
+	font-weight: 600;
 	line-height: 1em;
 	margin: 0 0 1em 0;
 }
@@ -1931,7 +1931,7 @@ textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
-	background: #f7f7f7;
+	background: #dcdcdc;
 	border-radius: 0.35em;
 	border: solid 2px transparent;
 	color: inherit;
@@ -2561,11 +2561,11 @@ input[type="button"],
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	background-color: transparent;
 	border-radius: 0.35em;
-	border: solid 3px #156cee;
-	color: #ffffff !important;
+	border: solid 3px #010440;
+	color: #010440 !important;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: 400;
+	font-weight: 600;
 	height: 3.15em;
 	height: calc(2.75em + 6px);
 	line-height: 2.75em;
@@ -2708,20 +2708,20 @@ input[type="button"]:disabled,
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
 	justify-content: space-between;
-	background-color: #1f1815;
+	background-color: #000000;
 	background-attachment: scroll, scroll;
-	background-image: url("images/overlay.png"), url("../../images/black_bg.jpeg");
+	background-image: url("../../images/black_bg.jpeg");
 	background-position: top left, top left;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, 150%;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255);
 	height: 100%;
 	left: 0;
 	padding: 8em 4em;
 	position: fixed;
 	text-align: right;
 	top: 0;
-	width: 35%;
+	width: 30%;
 }
 
 #header>* {
@@ -2804,10 +2804,10 @@ input[type="button"]:disabled,
 /* Main */
 
 #main {
-	margin-left: 35%;
-	max-width: 54em;
-	padding: 8em 4em 4em 4em;
-	width: calc(100% - 35%);
+	margin-left: 30%;
+	max-width: 60em;
+	padding: 8em 4em 4em 8em;
+	width: calc(100% - 30%);
 }
 
 #main>section {
@@ -3349,4 +3349,106 @@ body.is-touch .poptrox-popup .closer {
 		padding-left: 0;
 	}
 
+}
+
+/* other classes */
+#five {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.center-container {
+	text-align: center;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #010440;
+	padding: 10px;
+	text-align: right;
+	z-index: 1000;
+}
+
+#navbar i {
+	position: absolute;
+	left: 30px;
+	top: 15px;
+	font-size: 20px;
+	color: white;
+}
+
+#navbar button {
+	margin: 0 10px;
+	background-color: #010440;
+	border: None;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* Style the tab */
+.tab {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	display: inline-block;
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 55px;
+	transition: 1.0s;
+	font-size: 17px;
+	font-weight: 600;
+	color: #010440;
+	text-align: left;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	border-bottom: #156cee solid 3px;
+	animation: fadeEffect 2s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	border-bottom: #156cee solid 3px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: flex;
+	padding: 6px 12px;
+	border-top: none;
+	animation: fadeEffect 1s;
+	font-size: 16px;
+}
+
+.tabcontent ul li {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabcontent ul li .year {
+	margin-left: auto;
+	white-space: nowrap;
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
