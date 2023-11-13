@@ -3479,3 +3479,17 @@ body.is-touch .poptrox-popup .closer {
 		opacity: 1;
 	}
 }
+
+/* media queries */
+@media screen and (max-width: 480px) {
+
+	/* navbar */
+	#navbar {
+		text-align: center;
+	}
+
+	/* tab */
+	#navbar button {
+		margin: 10px;
+	}
+}
