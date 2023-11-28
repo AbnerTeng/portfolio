@@ -38,7 +38,7 @@
 		<i class="fas fa-kiwi-bird"> Welcome to Abner's Personal Website</i>
 		<button onclick="navigateToSection('one')">About Me</button>
 		<button onclick="navigateToSection('two')">Experiences</button>
-		<button onclick="navigateToSection('three')">Projects</button>
+		<button onclick="navigateToSection('three')">Recent Projects</button>
 		<button onclick="navigateToSection('four')">Contact</button>
 	</div>
 	<!-- Header -->
@@ -63,13 +63,14 @@
 			</h4>
 			<div class="tab" style="align-items: center;">
 				<button class="tablinks" onclick="OpenTab(event, 'education')" id="defaultOpen"><i
-						class="fas fa-graduation-cap" style="margin-right: 8px;"></i>Education</button>
+						class="fas fa-graduation-cap"
+						style="margin-right: 8px; margin-left: 8px;"></i>Education</button>
 				<button class="tablinks" onclick="OpenTab(event, 'experiences')"><i class="fas fa-desktop"
-						style="margin-right: 8px;"></i>Experiences</button>
+						style="margin-right: 8px; margin-left: 8px;"></i>Experiences</button>
 				<button class="tablinks" onclick="OpenTab(event, 'skills')"><i class="fas fa-code"
-						style="margin-right: 8px;"></i>Skills</button>
+						style="margin-right: 8px; margin-left: 8px"></i>Skills</button>
 				<button class="tablinks" onclick="OpenTab(event, 'tas')"><i class="fas fa-chalkboard-teacher"
-						style="margin-right: 8px;"></i>TAs</button>
+						style="margin-right: 8px; margin-left: 8px"></i>TAs</button>
 			</div>
 			<div id="education" class="tabcontent">
 				<p>
@@ -175,25 +176,27 @@
 				<h2>Recent Projects</h2>
 			</header>
 			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<a class="image fit thumb"><img src="images/thumbs/creation.png" height="200" alt="" /></a>
-					<h3>Creation Portfolio</h3>
-					<p>Keyword: Convex optimization, martech.</p>
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>
+						<a href="https://github.com/AbnerTeng/Creation-Portfolio">
+							Creation Portfolio: Convex optimization with application on promotion post pricing strategy
+						</a>
+					</h3>
+					<p>With: Hsi-Yen Lee</p>
+					<p>iKala Interactive Media Inc.</p>
 				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a class="image fit thumb"><img src="images/cms.jpeg" height="200" alt="" /></a>
-					<h3>23FW AICUP housing price prediction</h3>
-					<p>Keyword: Ensemble learning, spatial analysis, housing price prediction.</p>
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>
+						<a href="https://github.com/AbnerTeng/FW23_AICUP">
+							Housing price prediction: An ensemble learning approach
+						</a>
+					</h3>
+					<p>With: Chin-Jui Chen, Guan-Yu Lin, Meng-Chun, You</p>
+					<p>SinoPac Holding / TrendMicro</p>
 				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a class="image fit thumb"><img src="images/thumbs/cnn.webp" height="150" alt="" /></a>
-					<h3>Does CNN really do good on stock prediction? (On going)</h3>
-					<p>Keyword: Computer vision, deep learning, empirical asset pricing.</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a class="image fit thumb"><img src="images/thumbs/bert.png" height="150" alt="" /></a>
+				<article class="col-12 col-12-xsmall work-item">
 					<h3>Financial News sentiment analysis: An implication on investment portfolio</h3>
-					<p>Keyword: BERT, investment portfolio, asset pricing, sentiment analysis.</p>
+					<p>With: Kung-Wei Lu, Teng-Da Ke</p>
 				</article>
 
 			</div>
@@ -201,7 +204,24 @@
 				<li><a href="http://www.github.com/AbnerTeng" class="button">Full Portfolio</a></li>
 			</ul>
 		</section>
-
+		<!-- add after porject done -->
+		<section id="three">
+			<header class="major">
+				<h2>Work-In-Porgress</h2>
+			</header>
+			<div class="row">
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>Does CNN really predict well on stock?</h3>
+					<p>With: Kendro Vincent</p>
+				</article>
+			</div>
+			<div class="row">
+				<article class="col-12 col-12-xsmall work-item">
+					<h3>Data Town</h3>
+					<p>With: Jia-Wei Liao, Chin-Jui Chen, Meng-Chun You</p>
+				</article>
+			</div>
+		</section>
 		<!-- Four -->
 		<section id="four">
 			<h2>Get In Touch</h2>
